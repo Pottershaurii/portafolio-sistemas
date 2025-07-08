@@ -211,11 +211,11 @@ export const Hero = () => {
                 
                 {/* Main Image Container */}
                 <div className="relative w-full h-full rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-2xl">
-                  <div className="w-full h-full bg-gradient-to-br from-blue-100 to-purple-100 dark:from-blue-900 dark:to-purple-900 flex items-center justify-center">
-                    <div className="text-6xl md:text-7xl lg:text-8xl font-bold text-blue-600 dark:text-blue-400">
-                      {personalInfo.name.charAt(0)}
-                    </div>
-                  </div>
+                  <img
+                    src={personalInfo.image}
+                    alt={personalInfo.name}
+                    className="w-full h-full object-cover rounded-full"
+                  />
                 </div>
                 
                 {/* Animated Rings */}
